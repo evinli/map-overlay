@@ -1,4 +1,10 @@
 .App {
+  height: 100vh; /* Make sure body takes up the full height of the viewport */
+  margin: 0; /* Remove default margin to ensure full coverage */
+  display: flex;
+  padding-right: 30px;
+  padding-left: 30px;
+  align-items: center;
   text-align: center;
 }
 
@@ -35,4 +41,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Add this to your index.css file */
+.map-container {
+  height: 85vh; /* 50% of the screen height */
+  width: 45vw; /* 70% of the screen width */
+  margin-left: 48vw;
+  padding: 10px; /* Adjust this value as needed */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border-radius: 18px; /* Add rounded corners with a radius of 15px */
 }
